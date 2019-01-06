@@ -24,7 +24,7 @@ public class AccesoFichero {
 
 			try {
 			String[] contenido = carpeta.list();
-			System.out.println("Archivos o carpetas que contienen: " + contenido.length);
+			System.out.println("Archivos o carpetas que contiene: " + contenido.length);
 			for (String nombre : contenido) {
 				File f = new File(carpeta.getPath(), nombre);
 				if (f.isDirectory()) {
